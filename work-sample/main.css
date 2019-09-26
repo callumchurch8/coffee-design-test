@@ -1,0 +1,289 @@
+/*Stylesheet for ITNZ Retail AI Guide Download Page v2*/
+
+/*Overall Margins and Padding*/
+body{
+    margin:0;
+    width:100%;
+}
+
+/*Logo*/
+#logo{
+    width:146.25px;
+    height:27px;
+    margin-left:30px;
+    margin-top:30px;
+}
+
+/*12 Column Grid Setup*/
+
+/*Column Sizing*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/*Column Class*/
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    margin:15px;
+}
+
+/*Text*/
+h1{
+    font-family: "Roboto";
+    font-size:28.5px;
+    letter-spacing: 9px;
+}
+
+h2{
+    font-family: "Roboto";
+    font-size:21px;
+    letter-spacing: 10px;
+}
+
+h3{
+    font-family:"Raleway";
+    font-weight:bolder;
+    font-size:13.5px;
+    letter-spacing: 4px;
+}
+
+p{
+    font-family: "Roboto";
+    font-size:13.5px;
+    letter-spacing: 1px;
+}
+
+ul{
+    font-family: "Roboto";
+    font-size:13.5px;
+    letter-spacing: 1.75px;
+    margin-left:-25px
+}
+
+li{
+    padding-bottom:20px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+::placeholder{
+    color:white;
+    font-family: "Roboto";
+    font-size: 10.5px;
+}
+
+
+#fom{
+    display:block;
+    padding-bottom:25px;
+    color:#EDEFF0;
+    opacity:0.5;
+}
+
+.fom{
+    margin:2.5px 0px 2.5px 0px;
+    font-weight:bolder;
+    letter-spacing: 1.75px;
+}
+
+
+
+/*Sections*/
+
+.background{background-image: linear-gradient(to right bottom, #47B585, #47B585, #47B585, #406BC9, #693A77);}
+
+#first-section, #bottom-section{
+    margin-top:0;
+    color:#ffffff;
+    padding:20px 60px 30px 60px;
+}
+
+#first-section{
+    display:inline-flex;
+}
+
+#bottom-section{
+    display:inline-flex;
+    margin:0px;
+    padding:0px;
+}
+
+#bottom-section-right{
+    margin-top:100px;
+    display:block;
+}
+
+#second-section-content{
+    display:inline-flex;
+}
+
+
+#second-section{
+    background-color:white;
+    padding:20px 60px 20px 60px;
+}
+
+/*Forms*/
+
+input{
+    display:block;
+}
+
+input[type=checkbox]{
+    display: inline;
+}
+
+input[type=text]{
+    border: none;
+    border-bottom:1px solid white;
+    background-color:transparent;
+    margin-bottom:10px;
+    padding-bottom: 10px;
+    padding-top:10px;
+    color:white;
+    width:100%;
+}
+
+
+label{
+    font-size:10.5px;
+    font-family:"Roboto";
+    display: inline;
+}
+
+.checkbox{
+    margin-bottom:10px;
+}
+
+.submit-button{
+    padding: 10px 60px 10px 60px;
+    background-color:transparent;
+    border:1px solid white;
+    color:white;
+    margin-top:20px;
+    font-family:"Raleway";
+    font-weight:bolder;
+    font-size:10.5px;
+}
+
+/*Carousel*/
+
+#radio{
+    margin-top:280px;
+    text-align: center;
+}
+
+input[type=radio]{
+    display:inline-block;
+}
+
+#carousel{
+    display:block;
+    margin:15px;
+    padding:15px;
+    position:relative;
+    
+}
+
+#caro-images{
+}
+
+.caro-size{
+    display:block;
+    width:286.1px;
+    height:160.5px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#img1{
+    position:absolute;
+    top:135px;
+    left:50%;
+    margin-left:-143px;
+
+}
+
+#img2{
+    position:absolute;
+    top:90px;
+        left:75%;
+    margin-left:-143px;
+
+}
+
+#img3{
+    position:absolute;
+    top:50px;
+    left:50%;
+    margin-left:-143px;
+}
+
+#img4{
+    position:absolute;
+    top:90px;
+    left:25%;
+    margin-left:-143px;
+}
+
+
+/*Images*/
+
+#first-section-img{
+    width:483.75px;
+    height:327.75px;
+    padding:50px;
+    padding-left:25px;
+}
+
+/*Modal Pop up*/
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
